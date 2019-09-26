@@ -1,0 +1,349 @@
+body{
+    margin: 0;
+    font-family: 'Neucha', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background: url(../imagen/Minimalism-Light-Background-Wallpaper-2560x1600.jpg);
+    height: 100vh;
+    background-size: cover;
+    box-shadow: 2px 2px 20px grey;
+
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .lista-menu{
+    display: flex;
+}
+
+header .lista-menu li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+    
+}
+
+#contenedor-titulo-flex{
+    display: flex;
+    justify-content: center;
+    margin: 18vh auto;
+    background: #b8f1cb94;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 2px 2px 20px grey;
+    border-radius: 20px 20px 20px 20px;
+}
+
+h1{
+    font-size: 60px;
+    color: black;
+    margin: 0;
+}
+
+h2{
+    font-size: 25px;
+}
+
+.contenedor-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.contenedor-titulo a, #sobre-mi a, #blog a, #que-esperas a, #contacto input[type="submit"]{
+    font-size: 16px;
+    background: #fbd991b4;
+    color: black;
+    padding: 14px 24px;
+    width: 128px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 20px #705e36b4;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+.logo{
+    font-size: 20px;
+}
+
+nav ul li a{
+    font-size: 20px;
+    color: black;
+}
+
+/*Sección sobre mi*/
+
+h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+.contenedor-sobre-mi{
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto {
+    width: 50%;
+}
+.ordenadores img{
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 20px grey;
+    height: 50%;
+}
+
+/* Seccion servicios*/
+.contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.servicio {
+    width: 24%;
+    padding: 34px 30px 38px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.servicio h4{
+    font-size: 30px;
+    margin: 0;
+}
+
+.servicio p{
+    margin-bottom: 20px;
+    height: 194px;
+    font-size: 17px;
+}
+
+.contenedor-servicios .oscuro{
+    background: linear-gradient(to top, #57a99a, #84f1dd);
+    box-shadow: 0 12px 30px 0 rgba(77, 75, 75, 0.719);
+}
+
+.contenedor-servicios .claro{
+    background: linear-gradient(to top, #89c77f, #d1eecc);
+    box-shadow: 0 12px 30px 0 rgba(77, 75, 75, 0.719);
+}
+
+.ondas{
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+}
+
+.icono{
+    float: right;
+}
+
+/*Owl*/
+button.owl-prev, button.owl-next{
+    font-size: 40px !important;
+}
+span {
+    color: #30ada0;
+}
+
+/*Seccion por que trabajar conmigo*/
+
+.contenedor-trabajar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#por-que-trabajar .item{
+    width: 28%;
+    text-align: center;
+}
+
+#por-que-trabajar ul li{
+    list-style: none;
+    text-align: center;
+}
+
+#por-que-trabajar ul li:nth-child(2){
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#por-que-trabajar ul li:nth-child(3){
+    line-height: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.trabajar-conmigo{
+    width: 20%;
+    padding: 10px;
+    display: flex;
+}
+
+.trabajar-conmigo ul{
+    padding: 20px;
+}
+
+/*BLOG*/
+
+#blog{
+    background: #F9FAFC;
+}
+
+#blog .contenedor-publicaciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+#blog .publicacion{
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;
+}
+
+#blog img{
+    width: 100%;
+}
+
+#blog .contenido{
+    background: white;
+    padding: 20px;
+}
+
+#blog h4{
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+#blog p{
+    color: #5a6169;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+#blog a{
+    width: 87px;
+}
+
+/*Que esperas*/
+
+#que-esperas{
+    background: linear-gradient(rgba(48, 173, 152, 0.94), rgba(138, 248, 211, 0.9));
+    padding: 50px 0;
+    margin-top: 40px;
+}
+#que-esperas .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#que-esperas h3{
+    font-size: 30px;
+}
+
+/*FORMULARIO*/
+
+#contacto form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto;
+    
+}
+
+input[type="text"], input[type="email"]{
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 2px solid rgb(19, 184, 167);
+    font-size: 20px;
+    font-family: 'Neucha', cursive;
+}
+
+textarea{
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 2px solid rgb(19, 184, 167);
+    font-size: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    font-family: 'Neucha', cursive;
+
+}
+#contacto input[type="submit"]{
+    font-family: 'Neucha', cursive;
+    margin: auto;
+}
+
+
+
+.contacto-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.contacto-info img{
+    width: 28px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+/*FOOTER*/
+
+footer{
+    background: rgba(4, 90, 68, 0.94);
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+footer img{
+    margin: 0 40px;
+}
+
+footer img:hover{
+    box-shadow: 2px 2px 15px white;
+}
+
+footer p{
+    color: white;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+#whatsapp{
+    position: fixed;
+    top: 80%;
+    right: 1%;
+    z-index: 100;
+}
