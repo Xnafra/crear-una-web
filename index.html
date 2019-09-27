@@ -220,5 +220,35 @@ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="ano
         }
     }
 })</script>
+
+<script>
+
+$(document).ready(function(){
+
+$(window).scroll(function(){
+  scroll = $(window).scrollTop();
+  if (scroll > 100) {
+    $('.menu').css({"position":"fixed"});
+    $('.menu').css({"width":"100%"});
+    $('.menu').css({"top":"0"});
+    $('.menu').css({"background":"rgba(138, 248, 211, 1)"});
+    $('.menu a').css({"color":"#000"});
+    $('.logo').css({"color":"#000"});
+    $('.menu').css({"box-shadow":"rgba(0, 0, 0, 0.34) 7px 3px 11px 1px"});
+    $('.menu').css({"z-index":"100"});
+    $('.menu').css({"transition-duration":"0.5s"});
+  } else {
+    $('.menu').css({"position":"relative"});
+    $('.menu').css({"background":"transparent"});
+    $('.menu').css({"box-shadow":"0 0 0"});
+  }
+})
+
+$('.menu-icon').click(function(){
+  $('header nav').slideToggle();
+})
+
+})
+</script>
 </body>
 </html>
