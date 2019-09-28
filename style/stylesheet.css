@@ -355,3 +355,101 @@ html{
 #sobre-mi, #servicios, #mis-trabajos, #por-que-trabajar, #blog, #contacto{
     padding: 60px 0;
 }
+
+.menu-icon{
+    display: none;
+}
+
+@media (max-width: 800px) {
+.menu-icon{
+    display: block;
+    float: right;
+    width: 40px;
+    height: 35px;
+    margin-top: 15px;
+}
+
+header nav{
+    position: absolute;
+    top: 83%;
+    left: 0;
+    height: 280px;
+    background: #9de7db;
+    width: 100%;
+    display: none;
+}
+
+header nav ul{
+    flex-direction: column;
+}
+
+header nav ul li{
+    margin-bottom: 15px;
+}
+
+#contenedor-titulo-flex {
+    display: flex;
+    justify-content: center;
+    margin: 18vh auto;
+    background: none;
+    box-shadow: none;
+    padding: 16px;
+    width: 82%;
+}
+
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 23px;;
+}
+
+h3{
+    font-size: 45px;
+}
+
+.contenedor-sobre-mi {
+    flex-direction: column;
+}
+#sobre-mi img{
+    width: 100%;
+}
+#sobre-mi p{
+    width: 200%;
+}
+
+.contenedor-servicios {
+    flex-direction: column;
+}
+
+.servicio {
+    width: 82%;
+}
+
+.contenedor-trabajar {
+    flex-direction: column;
+}
+
+.trabajar-conmigo {
+    width: 93%;
+}
+
+#blog .contenedor-publicaciones {
+    flex-direction: column;
+}
+#blog .publicacion {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#contacto form {
+    flex-direction: column;
+    width: 100%;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+}
+
+}
