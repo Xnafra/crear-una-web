@@ -46,6 +46,18 @@ header .lista-menu li{
     border-radius: 20px 20px 20px 20px;
 }
 
+#contenedor-titulo-flex{
+        animation: float_2767 4s linear infinite;
+        transform-origin: 50% 50%;
+      }
+      
+      @keyframes float_2767 {
+        0% { transform: translateY(0) }
+        25% { transform: translateY(-6px) }
+        50% { transform: translateY(0) }
+        100% { transform: translateY(0) }
+      }
+
 h1{
     font-size: 60px;
     color: black;
@@ -135,12 +147,42 @@ h3{
 .contenedor-servicios .oscuro{
     background: linear-gradient(to top, #57a99a, #84f1dd);
     box-shadow: 0 12px 30px 0 rgba(77, 75, 75, 0.719);
+    animation: animationFrames ease 2s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-fill-mode:forwards; 
 }
 
+@keyframes animationFrames{
+    0% {
+      opacity:0;
+      transform:  translate(0px,-25px)  ;
+    }
+    100% {
+      opacity:1;
+      transform:  translate(0px,0px)  ;
+    }
+}
 .contenedor-servicios .claro{
     background: linear-gradient(to top, #89c77f, #d1eecc);
     box-shadow: 0 12px 30px 0 rgba(77, 75, 75, 0.719);
+    animation: animationFrames2 ease 2s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 0%;
+    animation-fill-mode:forwards;
 }
+@keyframes animationFrames2{
+    0% {
+      opacity:0;
+      transform:  translate(0px,8px)  ;
+    }
+    100% {
+      opacity:1;
+      transform:  translate(0px,0px)  ;
+    }
+  }
+  
+  
 
 .ondas{
     position: absolute;
@@ -451,5 +493,12 @@ h3{
 input[type="text"], input[type="email"] {
     width: 100%;
 }
+
+}
+
+@media (min-width: 600px) and (max-width: 800px){
+    .ondas {
+        width: 100%;
+    }
 
 }
